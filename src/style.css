@@ -365,7 +365,7 @@ form::before {
 
 input, select {
     padding: 16px 20px;
-    background: var(--glass-bg);
+    background: rgba(26, 26, 46, 0.8);
     backdrop-filter: var(--glass-blur);
     border: 1px solid var(--glass-border);
     border-radius: var(--border-radius);
@@ -384,12 +384,19 @@ select {
     background-position: right 16px center;
     background-size: 16px;
     padding-right: 48px;
+    background-color: rgba(26, 26, 46, 0.8) !important;
+    border: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+select:hover {
+    background-color: rgba(26, 26, 46, 0.9) !important;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 10px rgba(99, 102, 241, 0.2);
 }
 
 select option {
-    background: var(--glass-bg);
-    backdrop-filter: var(--glass-blur);
-    color: var(--text-color);
+    background: #1a1a2e !important;
+    color: var(--text-color) !important;
     padding: 12px 16px;
     border: none;
     font-weight: 500;
@@ -398,27 +405,32 @@ select option {
 
 @supports not (backdrop-filter: blur(16px)) {
     select option {
-        background: #1a1a2e;
-        color: var(--text-color);
+        background: #1a1a2e !important;
+        color: var(--text-color) !important;
     }
 }
 
 select option:hover {
-    background: var(--accent-color);
-    color: #ffffff;
+    background: var(--accent-color) !important;
+    color: #ffffff !important;
 }
 
 select option:checked {
-    background: var(--gradient-primary);
-    color: #ffffff;
+    background: var(--accent-color) !important;
+    color: #ffffff !important;
     font-weight: 600;
+}
+
+select option:focus {
+    background: var(--accent-color) !important;
+    color: #ffffff !important;
 }
 
 input:focus, select:focus {
     border-color: var(--accent-color);
     box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2), var(--shadow-glow);
     outline: none;
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(26, 26, 46, 0.95);
     transform: translateY(-2px);
 }
 
