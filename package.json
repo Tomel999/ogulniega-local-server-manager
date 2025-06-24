@@ -1,0 +1,21 @@
+{
+  "name": "minecraft-manager",
+  "version": "1.0.0",
+  "description": "A desktop app to manage local PaperMC servers.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "archiver": "^5.3.1",
+    "electron": "^36.5.0",
+    "electron-store": "^7.0.3",
+    "extract-zip": "^2.0.1",
+    "fs-extra": "^11.3.0",
+    "node-fetch": "^2.7.0",
+    "pidusage": "^4.0.1"
+  }
+}
